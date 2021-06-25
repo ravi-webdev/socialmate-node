@@ -1,0 +1,454 @@
+doctype transitional
+head
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  meta(name='x-apple-disable-message-reformatting')
+  meta(http-equiv='Content-Type' content='text/html; charset=UTF-8')
+  title
+  style(type='text/css' rel='stylesheet' media='all').
+    /* Base ------------------------------ */
+    @import url("https://fonts.googleapis.com/css?family=Nunito+Sans:400,700&amp;display=swap");
+    body {
+    width: 100% !important;
+    height: 100%;
+    margin: 0;
+    -webkit-text-size-adjust: none;
+    }
+    a {
+    color: #3869D4;
+    }
+    a img {
+    border: none;
+    }
+    td {
+    word-break: break-word;
+    }
+    .preheader {
+    display: none !important;
+    visibility: hidden;
+    mso-hide: all;
+    font-size: 1px;
+    line-height: 1px;
+    max-height: 0;
+    max-width: 0;
+    opacity: 0;
+    overflow: hidden;
+    }
+    /* Type ------------------------------ */
+    body,
+    td,
+    th {
+    font-family: "Nunito Sans", Helvetica, Arial, sans-serif;
+    }
+    h1 {
+    margin-top: 0;
+    color: #333333;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: left;
+    }
+    h2 {
+    margin-top: 0;
+    color: #333333;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    }
+    h3 {
+    margin-top: 0;
+    color: #333333;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+    }
+    td,
+    th {
+    font-size: 16px;
+    }
+    p,
+    ul,
+    ol,
+    blockquote {
+    margin: .4em 0 1.1875em;
+    font-size: 16px;
+    line-height: 1.625;
+    }
+    p.sub {
+    font-size: 13px;
+    }
+    /* Utilities ------------------------------ */
+    .align-right {
+    text-align: right;
+    }
+    .align-left {
+    text-align: left;
+    }
+    .align-center {
+    text-align: center;
+    }
+    /* Buttons ------------------------------ */
+    .button {
+    background-color: #3869D4;
+    border-top: 10px solid #3869D4;
+    border-right: 18px solid #3869D4;
+    border-bottom: 10px solid #3869D4;
+    border-left: 18px solid #3869D4;
+    display: inline-block;
+    color: #FFF;
+    text-decoration: none;
+    border-radius: 3px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.16);
+    -webkit-text-size-adjust: none;
+    box-sizing: border-box;
+    }
+    .button--green {
+    background-color: #22BC66;
+    border-top: 10px solid #22BC66;
+    border-right: 18px solid #22BC66;
+    border-bottom: 10px solid #22BC66;
+    border-left: 18px solid #22BC66;
+    }
+    .button--red {
+    background-color: #FF6136;
+    border-top: 10px solid #FF6136;
+    border-right: 18px solid #FF6136;
+    border-bottom: 10px solid #FF6136;
+    border-left: 18px solid #FF6136;
+    }
+    @media only screen and (max-width: 500px) {
+    .button {
+    width: 100% !important;
+    text-align: center !important;
+    }
+    }
+    /* Attribute list ------------------------------ */
+    .attributes {
+    margin: 0 0 21px;
+    }
+    .attributes_content {
+    background-color: #F4F4F7;
+    padding: 16px;
+    }
+    .attributes_item {
+    padding: 0;
+    }
+    /* Related Items ------------------------------ */
+    .related {
+    width: 100%;
+    margin: 0;
+    padding: 25px 0 0 0;
+    -premailer-width: 100%;
+    -premailer-cellpadding: 0;
+    -premailer-cellspacing: 0;
+    }
+    .related_item {
+    padding: 10px 0;
+    color: #CBCCCF;
+    font-size: 15px;
+    line-height: 18px;
+    }
+    .related_item-title {
+    display: block;
+    margin: .5em 0 0;
+    }
+    .related_item-thumb {
+    display: block;
+    padding-bottom: 10px;
+    }
+    .related_heading {
+    border-top: 1px solid #CBCCCF;
+    text-align: center;
+    padding: 25px 0 10px;
+    }
+    /* Discount Code ------------------------------ */
+    .discount {
+    width: 100%;
+    margin: 0;
+    padding: 24px;
+    -premailer-width: 100%;
+    -premailer-cellpadding: 0;
+    -premailer-cellspacing: 0;
+    background-color: #F4F4F7;
+    border: 2px dashed #CBCCCF;
+    }
+    .discount_heading {
+    text-align: center;
+    }
+    .discount_body {
+    text-align: center;
+    font-size: 15px;
+    }
+    /* Social Icons ------------------------------ */
+    .social {
+    width: auto;
+    }
+    .social td {
+    padding: 0;
+    width: auto;
+    }
+    .social_icon {
+    height: 20px;
+    margin: 0 8px 10px 8px;
+    padding: 0;
+    }
+    /* Data table ------------------------------ */
+    .purchase {
+    width: 100%;
+    margin: 0;
+    padding: 35px 0;
+    -premailer-width: 100%;
+    -premailer-cellpadding: 0;
+    -premailer-cellspacing: 0;
+    }
+    .purchase_content {
+    width: 100%;
+    margin: 0;
+    padding: 25px 0 0 0;
+    -premailer-width: 100%;
+    -premailer-cellpadding: 0;
+    -premailer-cellspacing: 0;
+    }
+    .purchase_item {
+    padding: 10px 0;
+    color: #51545E;
+    font-size: 15px;
+    line-height: 18px;
+    }
+    .purchase_heading {
+    padding-bottom: 8px;
+    border-bottom: 1px solid #EAEAEC;
+    }
+    .purchase_heading p {
+    margin: 0;
+    color: #85878E;
+    font-size: 12px;
+    }
+    .purchase_footer {
+    padding-top: 15px;
+    border-top: 1px solid #EAEAEC;
+    }
+    .purchase_total {
+    margin: 0;
+    text-align: right;
+    font-weight: bold;
+    color: #333333;
+    }
+    .purchase_total--label {
+    padding: 0 15px 0 0;
+    }
+    body {
+    background-color: #FFF;
+    color: #333;
+    }
+    p {
+    color: #333;
+    }
+    .email-wrapper {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    -premailer-width: 100%;
+    -premailer-cellpadding: 0;
+    -premailer-cellspacing: 0;
+    }
+    .email-content {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    -premailer-width: 100%;
+    -premailer-cellpadding: 0;
+    -premailer-cellspacing: 0;
+    }
+    /* Masthead ----------------------- */
+    .email-masthead {
+    padding: 25px 0;
+    text-align: center;
+    }
+    .email-masthead_logo {
+    width: 94px;
+    }
+    .email-masthead_name {
+    font-size: 16px;
+    font-weight: bold;
+    color: #A8AAAF;
+    text-decoration: none;
+    text-shadow: 0 1px 0 white;
+    }
+    /* Body ------------------------------ */
+    .email-body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    -premailer-width: 100%;
+    -premailer-cellpadding: 0;
+    -premailer-cellspacing: 0;
+    }
+    .email-body_inner {
+    width: 570px;
+    margin: 0 auto;
+    padding: 0;
+    -premailer-width: 570px;
+    -premailer-cellpadding: 0;
+    -premailer-cellspacing: 0;
+    }
+    .email-footer {
+    width: 570px;
+    margin: 0 auto;
+    padding: 0;
+    -premailer-width: 570px;
+    -premailer-cellpadding: 0;
+    -premailer-cellspacing: 0;
+    text-align: center;
+    }
+    .email-footer p {
+    color: #A8AAAF;
+    }
+    .body-action {
+    width: 100%;
+    margin: 30px auto;
+    padding: 0;
+    -premailer-width: 100%;
+    -premailer-cellpadding: 0;
+    -premailer-cellspacing: 0;
+    text-align: center;
+    }
+    .body-sub {
+    margin-top: 25px;
+    padding-top: 25px;
+    border-top: 1px solid #EAEAEC;
+    }
+    .content-cell {
+    padding: 35px;
+    }
+    /*Media Queries ------------------------------ */
+    @media only screen and (max-width: 600px) {
+    .email-body_inner,
+    .email-footer {
+    width: 100% !important;
+    }
+    }
+    @media (prefers-color-scheme: dark) {
+    body {
+    background-color: #333333 !important;
+    color: #FFF !important;
+    }
+    p,
+    ul,
+    ol,
+    blockquote,
+    h1,
+    h2,
+    h3 {
+    color: #FFF !important;
+    }
+    .attributes_content,
+    .discount {
+    background-color: #222 !important;
+    }
+    .email-masthead_name {
+    text-shadow: none !important;
+    }
+    }
+  //if mso
+    style(type='text/css').
+      .f-fallback  {
+      font-family: Arial, sans-serif;
+      }
+  style(type='text/css' rel='stylesheet' media='all').
+    body {
+    width: 100% !important;
+    height: 100%;
+    margin: 0;
+    -webkit-text-size-adjust: none;
+    }
+    body {
+    font-family: "Nunito Sans", Helvetica, Arial, sans-serif;
+    }
+    body {
+    background-color: #FFF;
+    color: #333;
+    }
+span.preheader(style='display: none !important; visibility: hidden; mso-hide: all; font-size: 1px; line-height: 1px; max-height: 0; max-width: 0; opacity: 0; overflow: hidden;')
+  | Use
+  | this link to reset your password. The link is only valid for 2 hours.
+table(width='650' align='center' background='#d6baaea2' cellpadding='0' cellspacing='0' role='presentation' style='margin: auto; background:#d6baaea2; width: 650px; -premailer-width: 100%; -premailer-cellpadding: 0; -premailer-cellspacing: 0; padding: 0;')
+  tr
+    td(align='center' style='word-break: break-word; font-family: "Nunito Sans", Helvetica, Arial, sans-serif; font-size: 16px;')
+      table.email-content(width='100%' cellpadding='0' cellspacing='0' role='presentation' style='width: 100%; -premailer-width: 100%; -premailer-cellpadding: 0; -premailer-cellspacing: 0; margin: 0; padding: 0;border-collapse: collapse;' border='0')
+        tr
+          td.email-masthead(style='word-break: break-word; font-family: "Nunito Sans", Helvetica, Arial, sans-serif; font-size: 16px; text-align: center; padding: 25px 0;' align='center')
+            a.f-fallback.email-masthead_name(href='https://example.com' style='color: #A8AAAF; font-size: 16px; font-weight: bold; text-decoration: none; text-shadow: 0 1px 0 white;')
+              #{productName}
+        // Email Body
+        tr
+          td.email-body(width='570' cellpadding='0' cellspacing='0' style='word-break: break-word; margin: 0; padding: 0; font-family: "Nunito Sans", Helvetica, Arial, sans-serif; font-size: 16px; width: 100%; -premailer-width: 100%; -premailer-cellpadding: 0; -premailer-cellspacing: 0;  background: #d6baaea2;')
+            table.email-body_inner(align='center' width='480' cellpadding='0' cellspacing='0' role='presentation' style='width: 480px; -premailer-width: 570px; -premailer-cellpadding: 0; -premailer-cellspacing: 0; margin: 0 auto; padding: 0; background: #d6baaea2;border-collapse: collapse;'  border='0' )
+              // Body content
+              tr
+                td.content-cell(style='word-break: break-word; font-family: "Nunito Sans", Helvetica, Arial, sans-serif; font-size: 16px; padding: 35px;')
+                  .f-fallback
+                  table(style='width="520"; margin: auto; background: #FFF; border-collapse: collapse; border-spacing: 0;')
+                    tr
+                      td(align='center' colspan="3")
+                        a(href=`${passwordResetUrl}` target='_blank'): img(style='width:650px' src='https://cureveda.imgix.net/pwa/cureveda/store/title-main.jpg')
+                    tr(style="width:450px")
+                      td(align='left' style="padding:25px" colspan="3")
+                        div(style="background: #fff; padding:25px")
+                          h1(style='margin-top: 00px; margin-bottom: 20px; color: #743912; font-size: 22px; font-weight: bold; text-align: center;' align='center') Reset Your Password
+                          br
+                          p(style='font-size: 16px; line-height: 1.625; color: #333; margin: 0.4em 0 1.1875em;')
+                            | Seems like you forget your password for Cureveda.com. <br/> Click the following link to reset your password. 
+                            br
+                    
+                          a(href=`${passwordResetUrl}` target='_blank' style='font-weight: normal; text-decoration: underline; color: #ff7101; border: 1px solid #ffbb86; border-right: 2px solid #ff7101; padding: 0.3rem 1rem ; font-size: 16px;')
+                              | info@cureveda.com
+                              br
+                          p(style='font-size: 16px; line-height: 1.625; color: #333; margin: .4em 0 1.1875em; margin-top: 30px; display: block;')
+                            | if you did not request a new password you can safely ignore this email. 
+                          p(style='font-size: 16px; line-height: 1.625; color: #333; margin: .4em 0 1.1875em; ')
+                            | We look forward to serving you again!
+            
+                          p(style='font-size: 16px; line-height: 1.625; color: #333; margin: .4em 0 1.1875em; ')
+                            | Regards,
+                            br
+                            | Team #{productName}
+
+              
+                          h2(style="text-align: center; color: #743912f7;font-size:23px;margin:0; padding: 0 0 15px 0;") SHOP NOW
+                          table(cellpadding="5" cellspacing="5" border="0" width="520")
+                            tr(align="center")
+                              td(style="width:33% !important")
+                                img(src='https://cureveda.imgix.net/pwa/cureveda/store/therapeutics.jpg' style="width:130px; height: 130px;" )
+                                a(href="https://cureveda.com/product-category/shop#general-wellness" style="background: #546328;  padding:	 0.2rem 0.8rem; color: #fff; border-radius: 50px; font-size: 14px; width: auto; display: inline-block; margin-top: 1rem; white-space: nowrap; text-decoration: none; letter-spacing: 0.5px;") Therapecutics
+                              td(style="width:33% !important")
+                                img(src='https://cureveda.imgix.net/pwa/cureveda/store/beauty.jpg' style="width:130px; height: 130px;")
+                                a(href="https://cureveda.com/product-category/shop#hair-skin-health" style="background: #546328;  padding: 0.2rem 0.8rem; color: #fff; border-radius: 50px; font-size: 14px; width: auto; display: inline-block; margin-top: 1rem; white-space: nowrap; text-decoration: none; letter-spacing: 0.5px;") Hair & Skin
+                              td(style="width:33% !important")
+                                img(src='https://cureveda.imgix.net/pwa/cureveda/store/health-packages.jpg' style="width:130px; height: 130px;")
+                                a(href="https://cureveda.com/product-category/health-packages" style="background: #546328;  padding: 0.2rem 0.8rem; color: #fff; border-radius: 50px; font-size: 14px; width: auto; display: inline-block; margin-top: 1rem; white-space: nowrap; text-decoration: none; letter-spacing: 0.5px;") Health Packages
+                        tr(style="background:#efe4de;")
+                          td(rowspan="2" valign="top")
+                            img(style='margin:auto' src='https://cureveda.imgix.net/pwa/cureveda/store/unnamed+(5).jpg')
+                          td.content-cell(align='center' valign="top" style='word-break: break-word; font-family: "Nunito Sans", Helvetica, Arial, sans-serif; font-size: 16px; padding: 35px;')
+                            img(style='margin:auto' src='https://cureveda.imgix.net/pwa/cureveda/store/unnamed+(6).jpg')
+                          td(rowspan="2" valign="top")
+                            img(src='https://cureveda.imgix.net/pwa/cureveda/store/unnamed+(4).jpg')
+                        tr
+                          td.content-cell(align='center' style='word-break: break-word; font-family: "Nunito Sans", Helvetica, Arial, sans-serif; font-size: 16px; padding: 35px;')
+                            p.f-fallback.sub.align-center(style='font-size: 15px; line-height: 1.625; text-align: center; color: #666666; margin: .4em 0 1.1875em;' align='center')
+                              | If you have any questions kindly contact us on the following:
+                              br
+                              | <b>Phone:</b>+91-9691997997, <b>Email Address:</b> info@cureveda.com
+                              br
+                              | <b>Free Doctor Consultation:</b> +91-9691997997
+                              br
+                              | @2019-20 cureveda
+
+                    //- // Sub copy
+                    //- table.body-sub(role='presentation' style='margin-top: 25px; padding-top: 25px; border-top-width: 1px; border-top-color: #EAEAEC; border-top-style: solid;')
+                    //-   tr
+                    //-     td(style='word-break: break-word; font-family: "Nunito Sans", Helvetica, Arial, sans-serif; font-size: 16px;')
+                    //-       p.f-fallback.sub(style='font-size: 13px; line-height: 1.625; color: #333; margin: .4em 0 1.1875em;')
+                    //-         | If you&rsquo;re having trouble with the button above, copy and
+                    //-         | paste the URL below into your web browser.
+                    //-       p.f-fallback.sub(style='font-size: 13px; line-height: 1.625; color: #333; margin: .4em 0 1.1875em;')
+                    //-         | #{passwordResetUrl}
