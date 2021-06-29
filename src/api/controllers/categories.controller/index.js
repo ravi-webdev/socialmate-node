@@ -2,6 +2,7 @@
 /* eslint-disable no-await-in-loop */
 /* eslint-disable consistent-return */
 const { Op } = require('sequelize');
+const { categories } = require('../../../config/sequelize');
 const db = require('../../../config/sequelize');
 
 const Categories = db.categories;
@@ -48,6 +49,50 @@ exports.getAllCategoriesList = async (req, res, next ) => {
   Categories.findAll({})
     .then((data) => {
       res.send(data);
+    })
+    .catch((err) => {
+      res.status(500).send({
+        message:
+          err.message || 'Some error occurred while retrieving tutorials.',
+      });
+    });
+}
+
+exports.editCategory = async (req, res, next ) => {
+
+  const categoryId = req.params.id;
+  console.log(categoryId);
+
+  // res.send({'Category Id': categoryId });
+
+  Categories.findOne({ where: { id: { [Op.like]: `%${categoryId}%` } } })
+    .then((data) => {
+      res.send(data);
+    })
+    .catch((err) => {
+      res.status(500).send({
+        message:
+          err.message || 'Some error occurred while retrieving tutorials.',
+      });
+    });
+}
+
+exports.editCategoryData = async (req, res, next ) => {
+
+  const reqBody = req.body;
+  console.log('Request Body start here');
+  console.log(reqBody);
+  console.log('Request Body Ends here');
+
+  Categories.update(
+    {
+      categoryName: reqBody.CategoryName,
+      parentCategoryID: reqBody.ParentCategoryID,
+      description: reqBody.description,
+    },
+    { where: { id: { [Op.like]: `%${reqBody.id}%` } } })
+    .then((dataUpdate) => {
+      res.send(dataUpdate);
     })
     .catch((err) => {
       res.status(500).send({

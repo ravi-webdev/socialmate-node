@@ -18,4 +18,10 @@ router.route('/getAllCategories')
 router.route('/getAllCategoriesList')
   .get(controller.getAllCategoriesList);
 
+router.route('/editCategory/:id')
+  .get(controller.editCategory);
+
+router.route('/editCategory/')
+  .post(controller.editCategoryData);
+
 module.exports = router;
